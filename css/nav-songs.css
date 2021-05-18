@@ -1,0 +1,36 @@
+.nav-songs{
+    width: 90%;
+    position: fixed;
+    bottom: 1em;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3em;
+    border-radius: 3em;
+}
+.nav-songs div{
+    box-shadow: 0px 0px 10px black;
+    width: 2.1em;
+    height: 2.1em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width:720px) and (orientation:landscape)
+{
+    .nav-songs{
+        position: fixed;
+        left: -5%;
+        top: 50%;
+        width: 30vh;
+        transform: rotate(90deg) translateX(0%) translateY(20%);
+   
+    }
+     .rotate_nav{
+         transform: rotate(-90deg);
+     }
+}
